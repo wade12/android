@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Balls.ie (YYY)</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">Welcome</string>
+    <string name="title_activity_trending">TrendingActivity</string>
+    <string name="trending">Trending</string>
+    <string name="miscellaneous">some miscellaneous text</string>
+    <string name="title_activity_latest">LatestActivity</string>
+    <string name="latest">Latest</string>
+    <string name="title_activity_galleries">GalleriesActivity</string>
+    <string name="galleries">Galleries</string>
+
+</resources>
