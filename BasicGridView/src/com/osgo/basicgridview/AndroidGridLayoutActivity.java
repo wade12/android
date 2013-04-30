@@ -2,6 +2,7 @@ package com.osgo.basicgridview;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -39,4 +40,20 @@ public class AndroidGridLayoutActivity extends Activity
 
     } // end method onCreate
     
+    /*@Override
+    public void onConfigurationChanged(Configuration newConfig)
+    {
+
+        super.onConfigurationChanged(newConfig);
+        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT)
+        {
+            setContentView(R.layout.vertical);
+        } // end if
+        else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE)
+        {
+            setContentView(R.layout.horizontal);
+        } // end else if
+
+    }; // end onConfigurationChanged
+*/    
 } // end Class AndroidGridLayoutActivity   
