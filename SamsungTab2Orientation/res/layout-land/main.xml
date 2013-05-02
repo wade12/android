@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/personalinfo"
+    	android:typeface="monospace"
+    	android:textStyle="italic"
+    	android:layout_gravity="center"
+    	android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firstname"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    	<EditText
+       		android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:ems="10"
+        	android:inputType="textPersonName" >
+        
+        	<requestFocus />
+    	</EditText>
+        
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lastname"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    	<EditText
+       		android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:ems="10"
+        	android:inputType="textPersonName" >
+        
+        	<requestFocus />
+    	</EditText>
+    	
+    <LinearLayout
+    	android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView
+          	android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+        	android:text="@string/gender"
+        	android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+  	</LinearLayout>
+  	
+	<RadioGroup
+	  	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content" >
+        
+	    <RadioButton
+	      	android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:checked="true"
+        	android:text="@string/male" />  
+	    
+	    <RadioButton
+	      	android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+        	android:text="@string/female" />
+	    
+	</RadioGroup>
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/db"
+        android:textAppearance="?android:attr/textAppearanceMedium" />  
+        
+    <DatePicker
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" /> 
+
+</LinearLayout>
