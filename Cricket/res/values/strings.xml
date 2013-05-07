@@ -6,7 +6,7 @@
     
     <string name="network_tab">Network Menu</string>
     <string name="device_tab">Device Tab</string>
-    <string name="battery_str">Outside off-stump</string>
-    <string name="network_str">In line with the stumps</string>
-    <string name="device_str">Outside leg-stump</string>
+    <string name="outside_off">Outside off-stump</string>
+    <string name="in_line">In line with the stumps</string>
+    <string name="outside_leg">Outside leg-stump</string>
 </resources>

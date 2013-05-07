@@ -12,6 +12,7 @@ import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
 
+@SuppressWarnings("deprecation")
 public class MainActivity extends TabActivity
 {
 	@Override
@@ -23,21 +24,21 @@ public class MainActivity extends TabActivity
 		   TabHost tab_host = (TabHost)findViewById(android.R.id.tabhost);
 		   // Set Tab Specification for Battery Tab
 		   
-	        TabSpec battery_tab_spec = tab_host.newTabSpec("battery_tab");
+	        TabSpec battery_tab_spec = tab_host.newTabSpec("off_tab");
 	        
 	        battery_tab_spec.setContent(R.id.battery_tab);
 	        battery_tab_spec.setIndicator("Off");
 	        tab_host.addTab(battery_tab_spec);
 	        
 	        // Set Tab Specification for Network Tab
-	        TabSpec network_tab_spec = tab_host.newTabSpec("network_tab");
+	        TabSpec network_tab_spec = tab_host.newTabSpec("middle_tab");
 	        
 	        network_tab_spec.setContent(R.id.network_tab);
 	        network_tab_spec.setIndicator("Middle");
 	        tab_host.addTab(network_tab_spec);
 	        
 	        // Set Tab Specification for Device Tab
-	        TabSpec  device_tab_spec = tab_host.newTabSpec("device_tab");
+	        TabSpec  device_tab_spec = tab_host.newTabSpec("leg_tab");
 	        
 	        device_tab_spec.setContent(R.id.device_tab);
 	        device_tab_spec.setIndicator("Leg");

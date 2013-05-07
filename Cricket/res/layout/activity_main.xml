@@ -1,54 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@android:id/tabhost" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    		android:id="@android:id/tabhost"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent">
+    
     <LinearLayout android:orientation="vertical"
-        android:layout_width="match_parent" android:layout_height="match_parent">
+        			android:layout_width="match_parent"
+        			android:layout_height="match_parent">
+        
         <TabWidget android:id="@android:id/tabs"
-            android:layout_width="match_parent" android:layout_height="wrap_content"></TabWidget>
+            		android:layout_width="match_parent"
+            		android:layout_height="match_parent">
+        </TabWidget>
+        
         <FrameLayout android:id="@android:id/tabcontent"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    					android:layout_width="match_parent"
+    					android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/battery_tab"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" >
+    		<LinearLayout
+        		android:id="@+id/battery_tab"
+        		android:layout_width="match_parent"
+        		android:layout_height="match_parent" >
         
-        <TextView
-            android:id="@+id/battery_layout"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/battery_str"
-            android:textAlignment="center" />
+        		<TextView
+            	android:id="@+id/battery_layout"
+           		android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:text="@string/outside_off"
+            	android:textAlignment="center" />
 
-</LinearLayout>
-        <LinearLayout
-        android:id="@+id/network_tab"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" >
+			</LinearLayout>
+		
+        	<LinearLayout
+        		android:id="@+id/network_tab"
+        		android:layout_width="match_parent"
+        		android:layout_height="match_parent" >
         
-        <TextView
-            android:id="@+id/network_layout"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/network_str"
-            android:textAlignment="center" />
+        	<TextView
+            	android:id="@+id/network_layout"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:text="@string/in_line"
+            	android:textAlignment="center" />
 
-</LinearLayout>      
-                   <LinearLayout
-        android:id="@+id/device_tab"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" >
+			</LinearLayout>
+		     
+        	<LinearLayout
+        		android:id="@+id/device_tab"
+        		android:layout_width="match_parent"
+        		android:layout_height="match_parent" >
         
-        <TextView
-            android:id="@+id/device_layout"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/device_str"
-            android:textAlignment="center" />
+        	<TextView
+            	android:id="@+id/device_layout"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:text="@string/outside_leg"
+            	android:textAlignment="center" />
 
-</LinearLayout>      
+			</LinearLayout>      
            
         </FrameLayout>
+        
     </LinearLayout>
+    
 </TabHost>
