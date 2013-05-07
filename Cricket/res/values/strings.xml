@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">AndroidActionTab</string>
+    <string name="app_name">Leg Before Wicket (LBW)</string>
     <string name="action_settings">Settings</string>
     
     <string name="network_tab">Network Menu</string>
     <string name="device_tab">Device Tab</string>
-    <string name="battery_str">Battery Page</string>
-    <string name="network_str">Network Page</string>
-    <string name="device_str">Device Page</string>
+    <string name="battery_str">Outside off-stump</string>
+    <string name="network_str">In line with the stumps</string>
+    <string name="device_str">Outside leg-stump</string>
 </resources>
