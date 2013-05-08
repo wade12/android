@@ -1,66 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
-    		android:id="@android:id/tabhost"
-    		android:layout_width="match_parent"
-    		android:layout_height="match_parent">
-    
-    <LinearLayout android:orientation="vertical"
-        			android:layout_width="match_parent"
-        			android:layout_height="match_parent">
-        
-        <TabWidget android:id="@android:id/tabs"
-            		android:layout_width="match_parent"
-            		android:layout_height="match_parent">
-        </TabWidget>
-        
-        <FrameLayout android:id="@android:id/tabcontent"
-    					android:layout_width="match_parent"
-    					android:layout_height="match_parent">
 
-    		<LinearLayout
-        		android:id="@+id/battery_tab"
-        		android:layout_width="match_parent"
-        		android:layout_height="match_parent" >
-        
-        		<TextView
-            	android:id="@+id/battery_layout"
-           		android:layout_width="match_parent"
-            	android:layout_height="match_parent"
-            	android:text="@string/outside_off"
-            	android:textAlignment="center" />
+	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+ 		android:layout_width="match_parent"
+ 		android:layout_height="fill_parent"
+ 		android:orientation="vertical" >
 
-			</LinearLayout>
+		<TextView  
+ 			android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+ 			android:text="@string/greeting"
+ 			android:textSize="50sp"
+ 			android:gravity="center" />
 		
-        	<LinearLayout
-        		android:id="@+id/network_tab"
-        		android:layout_width="match_parent"
-        		android:layout_height="match_parent" >
-        
-        	<TextView
-            	android:id="@+id/network_layout"
-            	android:layout_width="match_parent"
-            	android:layout_height="match_parent"
-            	android:text="@string/in_line"
-            	android:textAlignment="center" />
-
-			</LinearLayout>
-		     
-        	<LinearLayout
-        		android:id="@+id/device_tab"
-        		android:layout_width="match_parent"
-        		android:layout_height="match_parent" >
-        
-        	<TextView
-            	android:id="@+id/device_layout"
-            	android:layout_width="match_parent"
-            	android:layout_height="match_parent"
-            	android:text="@string/outside_leg"
-            	android:textAlignment="center" />
-
-			</LinearLayout>      
-           
-        </FrameLayout>
-        
-    </LinearLayout>
-    
-</TabHost>
+		<ImageView
+        	android:id="@+id/imageView1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="fill_parent"
+        	android:gravity="center"
+        	android:src="@drawable/howzat" />    
+		
+		<Button
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+ 			android:text="Click here to enter the site and learn about lbw in cricket."
+ 			android:onClick="goButtonClicked"
+ 			android:id="@+id/goButton" >
+		</Button>
+		
+</LinearLayout>
