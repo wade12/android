@@ -33,28 +33,7 @@ public class MainActivity extends Activity
 	    getWindow().addFlags(WindowManager.LayoutParams.FLAG_SHOW_WALLPAPER);
 		setContentView(R.layout.activity_main);
 		
-		/*
-		// Access Tab Host from Main Layout
-		TabHost tab_host = (TabHost)findViewById(android.R.id.tabhost);
-		   
-		   	// Set Tab Specification for Outside-Off Tab
-	        TabSpec battery_tab_spec = tab_host.newTabSpec("off_tab");
-	        battery_tab_spec.setContent(R.id.battery_tab);
-	        battery_tab_spec.setIndicator("Off");
-	        tab_host.addTab(battery_tab_spec);
-	        
-	        // Set Tab Specification for In-line Tab
-	        TabSpec network_tab_spec = tab_host.newTabSpec("middle_tab");
-	        network_tab_spec.setContent(R.id.network_tab);
-	        network_tab_spec.setIndicator("Middle");
-	        tab_host.addTab(network_tab_spec);
-	        
-	        // Set Tab Specification for Outside-Leg Tab
-	        TabSpec  device_tab_spec = tab_host.newTabSpec("leg_tab");
-	        network_tab_spec.setContent(R.id.device_tab);
-	        device_tab_spec.setIndicator("Leg");
-	        tab_host.addTab(device_tab_spec);
-		 */
+		addListenerOnButton();
 	        
 	} // end method onCreate
 	
@@ -82,7 +61,7 @@ public class MainActivity extends Activity
 			public void onClick(View arg0)
 			{
 			  Intent browserIntent = 
-                            new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.lords.org/"));
+                            new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.lords.org"));
 			    startActivity(browserIntent);
 			} // end method onClick
  
