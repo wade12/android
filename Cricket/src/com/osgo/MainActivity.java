@@ -2,15 +2,19 @@ package com.osgo;
 
 import com.osgo.R;
 
+import android.net.Uri;
 import android.os.Bundle;
 
 
 import android.app.Activity;
 import android.app.TabActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 import android.widget.Toast;
@@ -67,6 +71,24 @@ public class MainActivity extends Activity
         Toast toast = Toast.makeText(context, s, duration);
         toast.show();
     } // end method tToast
+    
+    
+    public void addListenerOnButton()
+    {
+		Button button = (Button) findViewById(R.id.enterButton);
+ 
+		button.setOnClickListener(new OnClickListener()
+		{
+			public void onClick(View arg0)
+			{
+			  Intent browserIntent = 
+                            new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.lords.org/"));
+			    startActivity(browserIntent);
+			} // end method onClick
+ 
+		}); //  end setOnClickListener
+ 
+	} // end method addListenerOnButton
     
 	
 	@Override
