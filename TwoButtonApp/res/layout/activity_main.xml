@@ -9,7 +9,7 @@
 	<TextView 
     	android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
-    	android:text="This is a simple two button app. \r\n \r\n Tell your user what your app does here \r\n \r\n \r\n \r\n"
+    	android:text="www.dublinbraces.ie. \r\n \r\n Welcome to the Newpark Orthodontics Android app. \r\n \r\n \r\n \r\n"
     	android:padding="10dp"
     	android:textColor="#FFFFFF" />
 
@@ -17,12 +17,18 @@
  			android:id="@+id/buttonStart"
  			android:layout_width="fill_parent"
  			android:layout_height="wrap_content"
- 			android:text="Start"/>
+ 			android:text="Visit our website."/>
 
 		<Button
  			android:id="@+id/buttonStop"
  			android:layout_width="fill_parent"
  			android:layout_height="wrap_content"
- 			android:text="Stop"/>
-
+ 			android:text="Contact us:"/>
+		
+		<Button
+ 			android:id="@+id/buttonStop"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="wrap_content"
+ 			android:text="Get directions to a clinic."/>
+		
 	</LinearLayout>
