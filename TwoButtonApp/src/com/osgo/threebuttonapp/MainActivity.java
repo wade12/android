@@ -28,7 +28,7 @@ public class MainActivity extends Activity
         buttonContact.setOnClickListener(contactListener);			// Register the onClick listener with the implementation above
         
         Button buttonDirections = (Button)findViewById(R.id.buttonDirections);        
-        buttonContact.setOnClickListener(directionsListener);		// Register the onClick listener with the implementation above
+        buttonDirections.setOnClickListener(directionsListener);		// Register the onClick listener with the implementation above
     } // end method onCreate
     
      
