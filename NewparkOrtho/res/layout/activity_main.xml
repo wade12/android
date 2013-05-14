@@ -10,7 +10,24 @@
     		android:layout_width="match_parent"
     		android:layout_height="0dp"
     		android:gravity="center"
-    		android:text="www.dublinbraces.ie. \r\n \r\n Welcome to the Newpark Orthodontics Android app. \r\n \r\n"
+    		android:text="www.dublinbraces.ie"
+    		android:padding="10dp"
+    		android:textSize="18sp"
+    		android:textColor="#FFFF00"
+    		android:layout_weight="1"
+        	android:orientation="horizontal" />
+		
+		<ImageView
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:src="@drawable/newparklogo" />		
+		
+		<TextView 
+    		android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:gravity="center"
+    		android:text="Welcome to the Newpark Orthodontics Android app."
     		android:padding="10dp"
     		android:textSize="18sp"
     		android:textColor="#FFFF00"
