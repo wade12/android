@@ -50,9 +50,7 @@ public class MainActivity extends Activity
      
     // Create an anonymous implementation of OnClickListener
     private OnClickListener contactListener = new OnClickListener()
-    {
-    	final Context context = null;
-    	
+    {    	
         public void onClick(View view)
         {
         	Log.d(logtag,"onClick() called - contact button"); 
@@ -73,6 +71,9 @@ public class MainActivity extends Activity
         	Log.d(logtag,"onClick() called - directions button"); 
         	Toast.makeText(MainActivity.this, "Obtaining directions.", Toast.LENGTH_SHORT).show();
         	Log.d(logtag,"onClick() ended - directions button");
+        	
+        	Intent intent = new Intent(MainActivity.this, DirectionsActivity.class);
+            startActivity(intent);
         } // method onClick
     }; // end directionsListener
      
