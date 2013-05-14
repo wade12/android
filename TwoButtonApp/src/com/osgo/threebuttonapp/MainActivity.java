@@ -1,15 +1,16 @@
 package com.osgo.threebuttonapp;
  
-import com.osgo.threebuttonapp.R;
-
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
- 
+
 public class MainActivity extends Activity
 {    
  private static String logtag = "3ButtonApp";				// for use as the tag when logging 
@@ -37,9 +38,12 @@ public class MainActivity extends Activity
     {
         public void onClick(View view)
         {
-          Log.d(logtag,"onClick() called - website button");              
-          Toast.makeText(MainActivity.this, "Loading website.", Toast.LENGTH_LONG).show();
-          Log.d(logtag,"onClick() ended - website button");
+        	Log.d(logtag,"onClick() called - website button");              
+        	Toast.makeText(MainActivity.this, "Loading website.", Toast.LENGTH_LONG).show();
+        	Log.d(logtag,"onClick() ended - website button");
+        	
+        	Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.dublinbraces.ie"));
+        	startActivity(browserIntent);
         } // end method onClick
     }; // end websiteListener
     
@@ -47,11 +51,16 @@ public class MainActivity extends Activity
     // Create an anonymous implementation of OnClickListener
     private OnClickListener contactListener = new OnClickListener()
     {
+    	Context context;
+    	
         public void onClick(View view)
         {
-         Log.d(logtag,"onClick() called - contact button"); 
-         Toast.makeText(MainActivity.this, "Obtaining contact details.", Toast.LENGTH_LONG).show();
-          Log.d(logtag,"onClick() ended - contact button");
+        	Log.d(logtag,"onClick() called - contact button"); 
+        	Toast.makeText(MainActivity.this, "Obtaining contact details.", Toast.LENGTH_LONG).show();
+        	Log.d(logtag,"onClick() ended - contact button");
+        	
+        	Intent intent = new Intent(context, ContactActivity.class);
+            startActivity(intent);
         } // method onClick
     }; // end contactListener
     
@@ -61,9 +70,9 @@ public class MainActivity extends Activity
     {
         public void onClick(View view)
         {
-         Log.d(logtag,"onClick() called - directions button"); 
-         Toast.makeText(MainActivity.this, "Obtaining directions.", Toast.LENGTH_LONG).show();
-          Log.d(logtag,"onClick() ended - directions button");
+        	Log.d(logtag,"onClick() called - directions button"); 
+        	Toast.makeText(MainActivity.this, "Obtaining directions.", Toast.LENGTH_LONG).show();
+        	Log.d(logtag,"onClick() ended - directions button");
         } // method onClick
     }; // end directionsListener
      
