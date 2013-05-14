@@ -23,10 +23,10 @@ public class MainActivity extends Activity
         setContentView(R.layout.activity_main);
          
         Button buttonWebsite = (Button)findViewById(R.id.buttonWebsite);        
-		buttonWebsite.setOnClickListener(websiteListener);			// Register the onClick listener with the implementation above
+		buttonWebsite.setOnClickListener(websiteListener);				// Register the onClick listener with the implementation above
        
         Button buttonContact = (Button)findViewById(R.id.buttonContact);        
-        buttonContact.setOnClickListener(contactListener);			// Register the onClick listener with the implementation above
+        buttonContact.setOnClickListener(contactListener);				// Register the onClick listener with the implementation above
         
         Button buttonDirections = (Button)findViewById(R.id.buttonDirections);        
         buttonDirections.setOnClickListener(directionsListener);		// Register the onClick listener with the implementation above
@@ -56,10 +56,10 @@ public class MainActivity extends Activity
         public void onClick(View view)
         {
         	Log.d(logtag,"onClick() called - contact button"); 
-        	Toast.makeText(MainActivity.this, "Obtaining contact details.", Toast.LENGTH_LONG).show();
+        	Toast.makeText(MainActivity.this, "Obtaining contact details.", Toast.LENGTH_SHORT).show();
         	Log.d(logtag,"onClick() ended - contact button");
         	
-        	Intent intent = new Intent(context, ContactActivity.class);
+        	Intent intent = new Intent(MainActivity.this, ContactActivity.class);
             startActivity(intent);
         } // method onClick
     }; // end contactListener
@@ -71,7 +71,7 @@ public class MainActivity extends Activity
         public void onClick(View view)
         {
         	Log.d(logtag,"onClick() called - directions button"); 
-        	Toast.makeText(MainActivity.this, "Obtaining directions.", Toast.LENGTH_LONG).show();
+        	Toast.makeText(MainActivity.this, "Obtaining directions.", Toast.LENGTH_SHORT).show();
         	Log.d(logtag,"onClick() ended - directions button");
         } // method onClick
     }; // end directionsListener
@@ -96,7 +96,7 @@ public class MainActivity extends Activity
     @Override
     protected void onPause()
     { //device goes to sleep or another activity appears
-    	Log.d(logtag,"onPause() called");//another activity is currently running (or user has pressed Home)
+    	Log.d(logtag,"onPause() called");	//another activity is currently running (or user has pressed Home)
     	super.onPause();
     } // end method onPause
  

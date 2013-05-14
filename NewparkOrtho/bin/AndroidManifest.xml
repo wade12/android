@@ -28,6 +28,11 @@
             android:name=".ContactActivity" >
         </activity>
  
+        <activity
+            android:label="@string/app_name"
+            android:name=".DirectionsActivity" >
+        </activity>
+        
     </application>
     
 </manifest>
