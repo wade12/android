@@ -29,7 +29,7 @@ public class DeliveryActivity extends Activity
 	public void addListenerOnButton()
 	{
 		radioDeliveryGroup = (RadioGroup) findViewById(R.id.radioDelivery);
-		buttonDisplay = (Button) findViewById(R.id.btnDisplay);
+		buttonDisplay = (Button) findViewById(R.id.submitButton);
 	 
 		buttonDisplay.setOnClickListener(new OnClickListener()
 		{

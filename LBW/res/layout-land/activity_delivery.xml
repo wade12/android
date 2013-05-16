@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
+    
+    <TextView  
+ 		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+ 		android:text="Please indicate type of delivery?"
+ 		android:textSize="75sp"
+ 		android:textColor="#FF0000"
+ 		android:gravity="center"
+ 		android:weightSum="1" />
  
-    <RadioGroup
-        android:id="@+id/radioDelivery"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+    	<RadioGroup
+        	android:id="@+id/radioDelivery"
+        	android:layout_width="fill_parent"               
+        	android:layout_height="fill_parent"           
+        	android:orientation="vertical"
+        	android:layout_gravity="center_vertical"
+        	android:gravity="center"
+        	android:checkedButton="@+id/radioFairBall">
  
-        <RadioButton
-            android:id="@+id/radioFairBall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/fair_ball" 
-            android:checked="true" />
+        	<RadioButton
+            	android:id="@+id/radioFairBall"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:minHeight="50dp"
+      			android:layout_gravity="center_vertical"
+      			android:gravity="center"
+      			android:layout_weight="0.4"
+            	android:text="@string/fair_ball" />
  
-        <RadioButton
-            android:id="@+id/radioNoBall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/no_ball" />
+        	<RadioButton
+            	android:id="@+id/radioNoBall"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:minHeight="50dp"
+      			android:layout_gravity="center_vertical"
+      			android:gravity="center"
+      			android:layout_weight="0.4" 
+            	android:text="@string/no_ball" />
  
-    </RadioGroup>
+   	 	</RadioGroup>
  
     <Button
-        android:id="@+id/btnDisplay"
+        android:id="@+id/submitButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        android:layout_weight="0.2"
         android:text="@string/submit" />
  
 </LinearLayout>
