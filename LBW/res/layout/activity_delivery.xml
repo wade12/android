@@ -1,41 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
+    
+    <TextView  
+ 		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+ 		android:text="Was the delivery a:"
+ 		android:textSize="100sp"
+ 		android:textColor="#FF0000"
+ 		android:gravity="center"
+ 		android:weightSum="1" />
  
-    <RadioGroup
-        android:id="@+id/radioDelivery"
-        android:layout_width="fill_parent"               
-        android:layout_height="fill_parent"           
-        android:orientation="horizontal"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:checkedButton="@+id/radioFairBall">
+    	<RadioGroup
+        	android:id="@+id/radioDelivery"
+        	android:layout_width="fill_parent"               
+        	android:layout_height="fill_parent"           
+        	android:orientation="horizontal"
+        	android:layout_gravity="center_vertical|center_horizontal"
+        	android:gravity="center"
+        	android:checkedButton="@+id/radioFairBall">
  
-        <RadioButton
-            android:id="@+id/radioFairBall"
-            android:width="500dp"        
-      		android:height="500dp"
-      		android:layout_gravity="center_vertical|center_horizontal"
-      		android:gravity="center"
-            android:text="@string/fair_ball" />
+        	<RadioButton
+            	android:id="@+id/radioFairBall"
+            	android:layout_width="wrap_content"
+            	android:layout_height="match_parent"
+      			android:layout_gravity="center_vertical|center_horizontal"
+      			android:gravity="center"
+      			android:layout_weight="0.4"
+            	android:text="@string/fair_ball" />
  
-        <RadioButton
-            android:id="@+id/radioNoBall"
-            android:width="100dp"        
-      		android:height="100dp"
-      		android:layout_gravity="center_vertical|center_horizontal"
-      		android:gravity="center" 
-            android:text="@string/no_ball" />
+        	<RadioButton
+            	android:id="@+id/radioNoBall"
+            	android:layout_width="wrap_content"
+            	android:layout_height="match_parent"
+      			android:layout_gravity="center_vertical|center_horizontal"
+      			android:gravity="center"
+      			android:layout_weight="0.4" 
+            	android:text="@string/no_ball" />
  
-    </RadioGroup>
+   	 	</RadioGroup>
  
     <Button
         android:id="@+id/btnDisplay"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_gravity="center_vertical|center_horizontal"
         android:gravity="center"
+        android:layout_weight="1"
         android:text="@string/submit" />
  
 </LinearLayout>
