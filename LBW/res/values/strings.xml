@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Howzat Cricket LBW tablet app.</string>
+    <string name="action_settings">Settings</string>
+    <string name="greeting">Welcome to the Howzat Cricket LBW tablet app.</string>
+    
+    <string name="network_tab">Network Menu</string>
+    <string name="device_tab">Device Tab</string>
+    <string name="outside_off">Outside off-stump</string>
+    <string name="in_line">In line with the stumps</string>
+    <string name="outside_leg">Outside leg-stump</string>
+    
+    <string name="delivery">Bowler\'s delivery</string>
+    
+    <string name="enter">Click here to enter the site and learn about lbw in cricket.</string>
+    <string name="submit">Submit</string>
+    
+    <string name="fair_ball">Fair Delivery</string>
+    <string name="no_ball">No Ball !</string>
+    
+    
+</resources>

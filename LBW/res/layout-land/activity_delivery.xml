@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ 
+    <RadioGroup
+        android:id="@+id/radioDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/radioFairBall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fair_ball" 
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/radioNoBall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_ball" />
+ 
+    </RadioGroup>
+ 
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit" />
+ 
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" >
+    	
+		<TextView 
+    		android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:gravity="center"
+    		android:text="Where did the ball pitch?"
+    		android:padding="10dp"
+    		android:textSize="18sp"
+    		android:textColor="#FFFF00"
+    		android:layout_weight="1"
+        	android:orientation="horizontal" />
+
+		<Button
+ 			android:id="@+id/buttonOutsideOff"
+ 			android:layout_width="match_parent"
+ 			android:layout_height="0dp"
+ 			android:paddingLeft="50dp"
+ 			android:paddingRight="50dp"
+ 			android:layout_weight="1"
+ 			android:textSize="30sp"
+ 			android:textColor="#00FF00"
+ 			android:text="Outside off-stump."/>
+
+		<Button
+ 			android:id="@+id/buttonInLine"
+ 			android:layout_width="match_parent"
+ 			android:layout_height="0dp"
+ 			android:paddingLeft="50dp"
+ 			android:paddingRight="50dp"
+ 			android:layout_weight="1"
+ 			android:textSize="30sp"
+ 			android:textColor="#FF0000"
+ 			android:text="In-line with the stumps."/>
+		
+		<Button
+ 			android:id="@+id/buttonOutsideLeg"
+ 			android:layout_width="match_parent"
+ 			android:layout_height="0dp"
+ 			android:paddingLeft="50dp"
+ 			android:paddingRight="50dp"
+ 			android:layout_weight="1"
+ 			android:textSize="30sp"
+ 			android:textColor="#0000FF"
+ 			android:text="Outside off-stump."/>
+		
+	</LinearLayout>
+	
