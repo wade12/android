@@ -19,7 +19,7 @@
         	android:layout_height="wrap_content"
         	android:layout_marginTop="50dp"           
         	android:orientation="vertical"
-        	android:layout_gravity="center_vertical"
+        	android:layout_gravity="center"
         	android:gravity="center"
         	android:checkedButton="@+id/radioFairBall">
  
@@ -28,8 +28,10 @@
             	android:layout_width="fill_parent"
             	android:layout_height="wrap_content"
             	android:layout_marginTop="100dp"
-      			android:layout_gravity="center_vertical"
-      			android:gravity="center"
+            	android:layout_marginLeft="250dp"
+            	android:layout_gravity="center"
+      			android:gravity="left"
+      			android:paddingLeft="25dp"
             	android:text="@string/fair_ball"
             	android:textSize="50dp" />
  
@@ -38,8 +40,10 @@
             	android:layout_width="fill_parent"
             	android:layout_height="wrap_content"
             	android:layout_marginTop="100dp"
-      			android:layout_gravity="center_vertical"
-      			android:gravity="center"
+            	android:layout_marginLeft="250dp"
+            	android:layout_gravity="center"
+      			android:gravity="left"
+      			android:paddingLeft="25dp"
             	android:text="@string/no_ball"
             	android:textSize="50dp" />
  
